@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Box1-->
+    <div class="container mainBox1">
+        <img src="images/drizzle.png">
+        <h1 class="Weather">Weather</h1>
+        <h2 class="Forecast">Forecast</h2>
+        <button class="Start">Start</button>
+    </div>
+    <!--Box2-->
+    <div class="container mainBox2 inactive">
+        <!-- search box -->
+        <div class="searchBox">
+            <input type="text" placeholder="Enter Your City" id="inputsearch">
+            <div class="searchIcon"><i class="fa-solid fa-magnifying-glass" id="searchIcon"></i></div>
+        </div>
+
+        <!-- icon box -->
+         <div class="iconBox">
+            <img src="images/clear.png" id="icon">
+            <p id="desc">Sunny</p>
+         </div>
+
+         <!-- temperature box -->
+         <div class="tempBox">
+            <h1 id="temp">0°c</h1>
+            <h3 id="city">City</h3>
+         </div>
+
+         <!-- extra details -->
+          <div class="extraDetails">
+            <div class="wind">
+                <i class="fa-solid fa-wind" id="windIcon"></i>
+                <div class="windData">
+                    <p id="windSpeed">0km/h</p>
+                    <p>Wind</p>
+                </div>
+            </div>
+            <div class="humidity">
+                <i class="fa-solid fa-droplet" id="humidityIcon"></i>
+                <div class="humidityData">
+                    <p id="humidityPer">0%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+          </div>
+    </div>
+    <!--Box3-->
+    <div class="container mainBox3 inactive">
+        <h1>404</h1>
+        <p>Oops!😥 Page Not Found</p>
+        <img class="errorImg" src="images/error_bg.png">
+        <p id="info">Please enter a valid city name</p>
+        <button class="homeBtn">Go Home</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
